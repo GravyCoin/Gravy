@@ -1,0 +1,9 @@
+Building Gravy
+
+See doc/readme-qt.rst for instructions on building Gravy QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Gravy.
+
+See doc/build-*.txt for instructions on building Gravyd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Gravy.
