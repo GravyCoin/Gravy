@@ -42,7 +42,7 @@ static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 2000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 9 * CENT; // 9% after block 21000
 
-static const int MODIFIER_INTERVAL_SWITCH = 2700;
+static const int MODIFIER_INTERVAL_SWITCH = 100;
 
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
@@ -54,8 +54,8 @@ static const int fHaveUPnP = true;
 #else
 static const int fHaveUPnP = false;
 #endif
-static const uint256 hashGenesisBlock("0000007735c670b53d6d480c4f217076497ebfb1d2ff5163dffdb63708dfdf59");
-static const uint256 hashGenesisBlockTestNet("0000007735c670b53d6d480c4f217076497ebfb1d2ff5163dffdb63708dfdf59");
+static const uint256 hashGenesisBlock("0x");
+static const uint256 hashGenesisBlockTestNet("0x");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 5 * 60; } // up to 5 minutes from the past   - down from 10 for security
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 5 * 60; } // up to 5 minutes from the future
